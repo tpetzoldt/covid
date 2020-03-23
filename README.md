@@ -11,14 +11,48 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
 * Complex SEIR model with seasonal forcing and intervention from Richard Neher's work group at University Basel https://neherlab.org/covid19/
 * **More:** "Top 15 R resources on Novel COVID-19 Coronavirus" from Antoine Soetewey https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f
 
-## SEIR model with R
+## A very basic SEIR model in R
 
-My own model is a standard SEIR model in R, using equations and parametrization from Christian Hubbs. It is only a qualitative and technical demonstration, and **not** intended for quantitative forcasts or timing.
+My own model is a standard SEIR model in R, using equations and parametrization from Christian Hubbs and the **deSolve** package for numerical integration. It is a qualitative and technical demonstration, and **not** intended for quantitative forcasts or timing.
 
 The [live demo](https://weblab.hydro.tu-dresden.de/models/seir/) uses packages **shiny**, **deSolve** and **dygraphs**.
 
+## The core model in R
 
+```
+library("deSolve")
+
+SEIR <- function(t, y, parms) {
+  with(as.list(c(parms, y)), {
+    dS <- -rho * beta * I * S
+    dE <-  rho * beta * S * I - alpha * E
+    dI <-  alpha * E - gamma * I
+    dR <-  gamma * I
+    list(c(dS, dE, dI, dR), r = dI/I)
+  })
+}
+
+# state variables: fractions of total population
+y0 <- c(S=1 - 5e-4,       # susceptible
+        E=4e-4,           # exposed
+        I=1e-4,           # infected
+        R=0)              # recovered or deceased
+
+parms  <- c(alpha = 0.2,  # inverse of incubation period (5 days)
+            beta = 1.75,  # average contact rate
+            gamma = 0.5,  # inverse of mean infectious period (2 days)
+            rho = 1)      # social distancing factor (0 ... 1)
+
+# time in days
+times <- seq(0, 150, 1)
+
+# numerical integration
+out <- ode(y0, times, SEIR, parms, method="bdf", atol=1e-8, rtol=1e-8)
+plot(out)
+```
+
+As said, this is much too primitive for real-world forecasts, but demonstrates the core principle.
 
 ----
 
-2020-04-23 tpetzoldt
+2020-04-23 [tpetzoldt](https://github.com/tpetzoldt)
