@@ -57,7 +57,7 @@ server <- function(input, output) {
     y0    <- c(S=input$S, E=input$E, I=input$I, R=input$R)
     parms <- c(alpha=input$alpha, beta=input$beta, gamma=input$gamma, rho=input$rho)
 
-    times <- seq(0, 200, 1)
+    times <- seq(0, 150, 1)
     out <- ode(y0, times, SEIR, parms, method="bdf", atol=1e-8, rtol=1e-8)
     out
   })
@@ -71,7 +71,11 @@ server <- function(input, output) {
       dySeries("I", color="red", label="Infected") %>%
       dySeries("R", color="blue", label="Recovered or deceased") %>%
       dyAxis("y", label = "relative fraction", labelHeight = 12) %>%
-      dyOptions(fillGraph = TRUE, fillAlpha = 0.3,
+      dyAxis("x", label = "time (d)", labelHeight = 18) %>%
+      dyOptions(
+                fillGraph = TRUE,
+                #stackedGraph = TRUE,
+                fillAlpha = 0.3,
                 animatedZooms = TRUE) %>%
       dyLegend(labelsSeparateLines = TRUE)
   })
@@ -84,6 +88,20 @@ server <- function(input, output) {
     dygraph(d_out, group="grp") %>%
       #dySeries("I", color="red", label="Rate") %>%
       dyAxis("y", label = "infected growth rate (1/d)", labelHeight = 12) %>%
+      dyAxis("x", label = "time (d)", labelHeight = 18) %>%
+      dyOptions(fillGraph = TRUE, fillAlpha = 0.5,
+                animatedZooms = TRUE) %>%
+      dyLegend(labelsSeparateLines = TRUE)
+  })
+
+  output$doubling <- renderDygraph({
+    out <- simulation()
+    d_out <- as.data.frame(out)
+    d_out$doubling <- log(2)/d_out$r
+    d_out <- d_out[c("time", "doubling")]
+    dygraph(d_out, group="grp") %>%
+      dyAxis("y", label = "doubling time (d)", valueRange=c(0, 10), labelHeight = 12) %>%
+      dyAxis("x", label = "time (d)", labelHeight = 18) %>%
       dyOptions(fillGraph = TRUE, fillAlpha = 0.5,
                 animatedZooms = TRUE) %>%
       dyLegend(labelsSeparateLines = TRUE)
@@ -105,7 +123,8 @@ ui <- fluidPage(
     mainPanel(
       h3("Simulation results"),
       dygraphOutput("dygraph", height = "300px"),
-      dygraphOutput("derivative", height = "300px")
+      dygraphOutput("derivative", height = "300px"),
+      dygraphOutput("doubling", height = "300px")
     )
   )
 )
