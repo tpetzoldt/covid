@@ -11,6 +11,15 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
 * Complex SEIR model with seasonal forcing and intervention from Richard Neher's work group at University Basel https://neherlab.org/covid19/
 * **More:** "Top 15 R resources on Novel COVID-19 Coronavirus" from Antoine Soetewey https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f
 
+## Some R code snippets to plot the JHU data
+
+The following plots show the development of raw data, rates of increase and doubling times for some countries.
+https://tpetzoldt.github.io/covid/plot_covid.html
+
+Data source: 2019 Novel Coronavirus COVID-19 (2019-nCoV) 
+Data Repository by Johns Hopkins CSSE,  https://github.com/CSSEGISandData/COVID-19
+
+
 ## A very basic SEIR model in R
 
 My own model is a standard SEIR model in R, using equations and parametrization from Christian Hubbs and the **deSolve** package for numerical integration. It is a qualitative and technical demonstration, and **not** intended for quantitative forcasts or timing.
