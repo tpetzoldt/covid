@@ -13,10 +13,7 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
 
 ## Some R code snippets to plot the JHU data
 
-* [**Plots**](https://tpetzoldt.github.io/covid/plot_covid.html) showing the development of raw data, rates of increase and doubling times for some countries.
-
-
-Data source: 2019 Novel Coronavirus COVID-19 (2019-nCoV) [Data Repository by Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19)
+* [**Plots**](https://tpetzoldt.github.io/covid/plot_covid.html) showing the development of raw data, rates of increase and doubling times for some countries (Data source: 2019 Novel Coronavirus COVID-19 (2019-nCoV) [Data Repository by Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19))
 
 
 ## A very basic SEIR model in R
