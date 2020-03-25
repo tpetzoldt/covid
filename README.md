@@ -24,9 +24,11 @@ Data Repository by Johns Hopkins CSSE,  https://github.com/CSSEGISandData/COVID-
 
 My own model is a standard SEIR model in R, using equations and parametrization from Christian Hubbs and the **deSolve** package for numerical integration. It is a qualitative and technical demonstration, and **not** intended for quantitative forcasts or timing.
 
+### Live demo
+
 The [live demo](https://weblab.hydro.tu-dresden.de/models/seir/) uses packages **shiny**, **deSolve** and **dygraphs**.
 
-## The core model in R
+### The core model in R
 
 ```
 library("deSolve")
