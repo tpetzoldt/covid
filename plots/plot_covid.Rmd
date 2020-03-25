@@ -1,6 +1,6 @@
 ---
 title: "Some functions to plot JHU Covid-19 data"
-date: " 2020-03-24"
+date: " 2020-03-25"
 output: 
   html_document:
     code_folding: hide
@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 ## Notes
 
 * **This page is only for my personal understanding and may contain errors!**
-* **Please consult the web page of the experts, e.g.: https://www.rki.de/ **
+* **Please consult the web page of the experts, e.g.: https://www.rki.de **
 * more info: https://tpetzoldt.github.io/covid
 
 ## R packages and data
@@ -104,8 +104,8 @@ dat2 %>%
   geom_point() + geom_smooth() + labs(y = "rate (1/d)")
 ```
 
-A similar indicator $r_{lag}$ can be repeated with a lag time $\Delta t > 1$day, for example 
-one week ($\Delta t > 7$):
+A similar indicator $r_{lag}$ can be repeated with a lag time $\Delta t = 1$ day, for example 
+one week ($\Delta t = 7$d ays):
 
 ```{r}
 lag <- 7
@@ -173,9 +173,9 @@ Dong, E., Du, H., & Gardner, L. (2020). An interactive web-based dashboard to
 track COVID-19 in real time. The Lancet Infectious Diseases, S1473309920301201.
 https://doi.org/10.1016/S1473-3099(20)30120-1
 
-**Please consult the web page of the experts, e.g.: https://www.rki.de/ **
+**Please consult the web page of the experts, e.g.: https://www.rki.de **
 
 ----
 
-Additional links and more info: https://tpetzoldt.github.io/covid
+Additional links and related info: https://tpetzoldt.github.io/covid
 
