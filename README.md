@@ -13,20 +13,18 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
 
 ## Some R code snippets to plot the JHU data
 
-The following plots show the development of raw data, rates of increase and doubling times for some countries.
-https://tpetzoldt.github.io/covid/plot_covid.html
-
-Data source: 2019 Novel Coronavirus COVID-19 (2019-nCoV) 
-Data Repository by Johns Hopkins CSSE,  https://github.com/CSSEGISandData/COVID-19
+* [**Plots**](https://tpetzoldt.github.io/covid/plot_covid.html) showing the development of raw data, rates of increase and doubling times for some countries (Data source: 2019 Novel Coronavirus COVID-19 (2019-nCoV) [Data Repository by Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19))
 
 
 ## A very basic SEIR model in R
 
 My own model is a standard SEIR model in R, using equations and parametrization from Christian Hubbs and the **deSolve** package for numerical integration. It is a qualitative and technical demonstration, and **not** intended for quantitative forcasts or timing.
 
-The [live demo](https://weblab.hydro.tu-dresden.de/models/seir/) uses packages **shiny**, **deSolve** and **dygraphs**.
+### Live demo
 
-## The core model in R
+The [**live demo**](https://weblab.hydro.tu-dresden.de/models/seir/) uses packages **shiny**, **deSolve** and **dygraphs**.
+
+### The core model in R
 
 ```
 library("deSolve")
