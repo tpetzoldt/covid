@@ -1,6 +1,5 @@
 ---
 title: "Some functions to plot JHU Covid-19 data"
-date: " 2020-03-25"
 output: 
   html_document:
     code_folding: hide
@@ -10,11 +9,12 @@ output:
 knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 ```
 
+
 ## Notes
 
 * **This page is only for my personal understanding and may contain errors!**
 * **Please consult the web page of the experts, e.g.: https://www.rki.de **
-* more info: https://tpetzoldt.github.io/covid
+* Last update  **`r Sys.time()`**, more info: https://tpetzoldt.github.io/covid
 
 ## R packages and data
 
@@ -54,7 +54,7 @@ dat2 <-
 
 ## Time series plots of raw data
 
-The first plot shows number of total infections for selected countries in linear scale
+The first plot shows total number of identified infections for selected countries in linear scale. It is very important to know, that the number of identified cases depends strongly on efforts and representativity of tests. 
 
 ```{r}
 dat2 %>%
@@ -178,4 +178,3 @@ https://doi.org/10.1016/S1473-3099(20)30120-1
 ----
 
 Additional links and related info: https://tpetzoldt.github.io/covid
-
