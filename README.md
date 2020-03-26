@@ -9,6 +9,7 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
 * Basic SEIR model from Christian Hubbs, that inspired my model https://towardsdatascience.com/social-distancing-to-slow-the-coronavirus-768292f04296
 * Extended SEIR model from Alison Hill, Harvard University https://github.com/alsnhll/SEIR_COVID19
 * Complex SEIR model with seasonal forcing and intervention from Richard Neher's work group at University Basel https://neherlab.org/covid19/
+* SIR-X model from Dirk Brockmann, Robert Koch Institute and Humboldt university Berlin, Germany http://rocs.hu-berlin.de/corona/docs/forecast/results_by_country/ 
 * **More:** "Top 15 R resources on Novel COVID-19 Coronavirus" from Antoine Soetewey https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f
 
 ## Some R code snippets to plot the JHU data
