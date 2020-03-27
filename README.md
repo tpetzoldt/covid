@@ -11,6 +11,7 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
 * Complex SEIR model with seasonal forcing and intervention from Richard Neher's work group at University Basel https://neherlab.org/covid19/
 * SIR-X model from Dirk Brockmann, Robert Koch Institute and Humboldt university Berlin, Germany [webpage](http://rocs.hu-berlin.de/corona/docs/forecast/results_by_country/ ), [paper](https://doi.org/10.1101/2020.02.18.20024414), [sourcecode + data](https://github.com/benmaier/COVID19CaseNumberModel)
 * Reports and models from the [Imperial College London](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/)
+* [Surveillance, Outbreak Response Management and Analysis System (SORMAS)](https://path.org/articles/open-source-software-tool-helps-governments-monitor-covid-19/) of the Helmholtz Centre for Infection Research
 * **More:** "[Top 15 R resources on Novel COVID-19 Coronavirus](https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f)" from Antoine Soetewey 
 
 ## Some R code snippets to plot the JHU data
