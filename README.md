@@ -9,8 +9,8 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
 * Basic SEIR model from Christian Hubbs, that inspired my model https://towardsdatascience.com/social-distancing-to-slow-the-coronavirus-768292f04296
 * Extended SEIR model from Alison Hill, Harvard University https://github.com/alsnhll/SEIR_COVID19
 * Complex SEIR model with seasonal forcing and intervention from Richard Neher's work group at University Basel https://neherlab.org/covid19/
-* SIR-X model from Dirk Brockmann, Robert Koch Institute and Humboldt university Berlin, Germany http://rocs.hu-berlin.de/corona/docs/forecast/results_by_country/ 
-* **More:** "Top 15 R resources on Novel COVID-19 Coronavirus" from Antoine Soetewey https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f
+* SIR-X model from Dirk Brockmann, Robert Koch Institute and Humboldt university Berlin, Germany [webpage](http://rocs.hu-berlin.de/corona/docs/forecast/results_by_country/ ), [paper](https://doi.org/10.1101/2020.02.18.20024414), [sourcecode + data](https://github.com/benmaier/COVID19CaseNumberModel)
+* **More:** "[Top 15 R resources on Novel COVID-19 Coronavirus](https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f)" from Antoine Soetewey 
 
 ## Some R code snippets to plot the JHU data
 
@@ -63,4 +63,4 @@ As said, this is much too primitive for real-world forecasts, but demonstrates t
 
 ----
 
-2020-04-23 [tpetzoldt](https://github.com/tpetzoldt)
+2020-04-27 [tpetzoldt](https://github.com/tpetzoldt)
