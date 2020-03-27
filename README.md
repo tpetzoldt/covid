@@ -2,7 +2,7 @@
 
 The Covid-19 pandemic is currently changing our lives. This repository will contain code snippets and data analyses that help me to understand its development. The tools needed are similar to what we typically use in ecological modelling. However, I am not an epidemiologist, so my view is very naive and everything may be wrong.
 
-## Resources from other people
+## Epidemiological data, models and model-related research
 
 * Data Source from Johns Hopkins University https://github.com/CSSEGISandData/COVID-19
 * R Shiny App from Ben Phillips, University of Melbourne https://benflips.shinyapps.io/nCovForecast/
