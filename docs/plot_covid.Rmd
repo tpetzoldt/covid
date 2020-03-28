@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 ```
 
-Last update  **`r Sys.time()`**, more info: https://tpetzoldt.github.io/covid
+Last update  **`r Sys.time()`**, more info: https://github.com/tpetzoldt/covid
 
 ## Notes
 
@@ -178,4 +178,4 @@ https://doi.org/10.1016/S1473-3099(20)30120-1
 
 ----
 
-Additional links and related info: https://tpetzoldt.github.io/covid
+Additional links and related info: https://github.com/tpetzoldt/covid
