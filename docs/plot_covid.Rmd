@@ -9,12 +9,13 @@ output:
 knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 ```
 
+Last update  **`r Sys.time()`**, more info: https://tpetzoldt.github.io/covid
 
 ## Notes
 
 * **This page is only for my personal understanding and may contain errors!**
 * **Please consult the web page of the experts, e.g.: https://www.rki.de **
-* Last update  **`r Sys.time()`**, more info: https://tpetzoldt.github.io/covid
+
 
 ## R packages and data
 
