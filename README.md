@@ -22,8 +22,8 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
 ## A very basic SEIR model in R
 
 * The [**live demo**](https://weblab.hydro.tu-dresden.de/models/seir/) uses packages **shiny**, **deSolve** and **dygraphs**.
-* The model is a standard SEIR model in R, using equations and parametrization from Christian Hubbs. It is a qualitative and technical demonstration, and **not** intended for quantitative forcasts or timing.
-* additional basic approaches can be found in the "models" folder.
+* The model is a standard SEIR model in R, using equations and parametrization from Christian Hubbs. It is a qualitative and technical demonstration, **not** intended for quantitative forcasts or timing.
+* additional basic approaches can be found in the [models](/models) folder.
 
 ### The core model in R
 
