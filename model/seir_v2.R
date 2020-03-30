@@ -1,8 +1,12 @@
+## Basic SEIR model
+## core model parameters taken from:
+## https://towardsdatascience.com/social-distancing-to-slow-the-coronavirus-768292f04296
+##
+## implemented by tpetzoldt as a shiny app
+
 library("deSolve")
 library("dygraphs")
 
-## model parameters taken from:
-## https://towardsdatascience.com/social-distancing-to-slow-the-coronavirus-768292f04296
 
 SEIR <- function(t, y, parms) {
   with(as.list(c(parms, y)), {
