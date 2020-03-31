@@ -5,14 +5,20 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
 ## Epidemiological data, models and model-related research
 
 * Data Source from Johns Hopkins University https://github.com/CSSEGISandData/COVID-19
+* Data from Germany (Robert Koch-Institute):
+    [COVID-19-Dashboard](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4) and
+    [tabular data](https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0/data)
 * R Shiny App from Ben Phillips, University of Melbourne https://benflips.shinyapps.io/nCovForecast/
-* Basic SEIR model from Christian Hubbs, that inspired my model https://towardsdatascience.com/social-distancing-to-slow-the-coronavirus-768292f04296
+* Basic [SEIR model from Christian Hubbs](https://towardsdatascience.com/social-distancing-to-slow-the-coronavirus-768292f04296), that inspired my model 
 * Extended SEIR model from Alison Hill, Harvard University https://github.com/alsnhll/SEIR_COVID19
 * Complex SEIR model with seasonal forcing and intervention from Richard Neher's work group at University Basel https://neherlab.org/covid19/
+* Erlang-SEPIDR model "[CovidSIM](http://covidsim.eu/)" by Martin Eichner and Markus Schwehm ExploSYS GmbH [interactive app](http://covidsim.eu/) [source code](https://gitlab.com/exploratory-systems/covidsim/)
 * SIR-X model from Ben Meier and Dirk Brockmann, Robert Koch Institute and Humboldt University Berlin, Germany [webpage](http://rocs.hu-berlin.de/corona/docs/forecast/results_by_country/ ), [paper](https://doi.org/10.1101/2020.02.18.20024414), [sourcecode + data](https://github.com/benmaier/COVID19CaseNumberModel)
 * Reports and models from the [Imperial College London](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/), Ferguson et al. (2020) [preprint](https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf) of an individual-based model
 * [Surveillance, Outbreak Response Management and Analysis System (SORMAS)](https://path.org/articles/open-source-software-tool-helps-governments-monitor-covid-19/) of the Helmholtz Centre for Infection Research
-* **More:** "[Top 15 R resources on Novel COVID-19 Coronavirus](https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f)" from Antoine Soetewey 
+* **More:** 
+    * vejmelkam's list of covid19-models: https://github.com/vejmelkam/covid19-models/
+    * "[Top 15 R resources on Novel COVID-19 Coronavirus](https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f)" from Antoine Soetewey 
 
 ## Some R code snippets to plot the JHU data
 
