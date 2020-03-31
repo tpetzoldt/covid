@@ -17,6 +17,7 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
 * Reports and models from the [Imperial College London](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/), Ferguson et al. (2020) [preprint](https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf) of an individual-based model
 * [Surveillance, Outbreak Response Management and Analysis System (SORMAS)](https://path.org/articles/open-source-software-tool-helps-governments-monitor-covid-19/) of the Helmholtz Centre for Infection Research
 * **More:** 
+    * [Coronavirus Tech Handbook -- Various Efforts To Predict The Future](https://coronavirustechhandbook.com/forecasting)
     * vejmelkam's list of covid19-models: https://github.com/vejmelkam/covid19-models/
     * "[Top 15 R resources on Novel COVID-19 Coronavirus](https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f)" from Antoine Soetewey 
 
