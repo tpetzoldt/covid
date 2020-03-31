@@ -4,15 +4,22 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
 
 ## Epidemiological data, models and model-related research
 
+### Data 
+
 * Data Source from Johns Hopkins University https://github.com/CSSEGISandData/COVID-19
+* Our World in Data: [Coronavirus Disease (COVID-19) - Statistics and Research](https://ourworldindata.org/coronavirus-data)
 * Data from Germany (Robert Koch-Institute):
     [COVID-19-Dashboard](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4) and
-    [tabular data](https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0/data)
+    [data](https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0/data)
+
+    
+### Models
+
 * R Shiny App from Ben Phillips, University of Melbourne https://benflips.shinyapps.io/nCovForecast/
 * Basic [SEIR model from Christian Hubbs](https://towardsdatascience.com/social-distancing-to-slow-the-coronavirus-768292f04296), that inspired my model 
 * Extended SEIR model from Alison Hill, Harvard University https://github.com/alsnhll/SEIR_COVID19
 * Complex SEIR model with seasonal forcing and intervention from Richard Neher's work group at University Basel https://neherlab.org/covid19/
-* Erlang-SEPIDR model "[CovidSIM](http://covidsim.eu/)" by Martin Eichner and Markus Schwehm ExploSYS GmbH [interactive app](http://covidsim.eu/) [source code](https://gitlab.com/exploratory-systems/covidsim/)
+* Erlang-SEPIDR model "[CovidSIM](http://covidsim.eu/)" by Martin Eichner and Markus Schwehm, ExploSYS GmbH [interactive app](http://covidsim.eu/) [source code](https://gitlab.com/exploratory-systems/covidsim/)
 * SIR-X model from Ben Meier and Dirk Brockmann, Robert Koch Institute and Humboldt University Berlin, Germany [webpage](http://rocs.hu-berlin.de/corona/docs/forecast/results_by_country/ ), [paper](https://doi.org/10.1101/2020.02.18.20024414), [sourcecode + data](https://github.com/benmaier/COVID19CaseNumberModel)
 * Reports and models from the [Imperial College London](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/), Ferguson et al. (2020) [preprint](https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf) of an individual-based model
 * [Surveillance, Outbreak Response Management and Analysis System (SORMAS)](https://path.org/articles/open-source-software-tool-helps-governments-monitor-covid-19/) of the Helmholtz Centre for Infection Research
@@ -80,10 +87,9 @@ Maier, B. F., & Brockmann, D. (2020). Effective containment explains sub-exponen
 
 Soetaert, K., Petzoldt, T., & Setzer, R. W. (2010). Solving Differential Equations in R: Package deSolve. Journal of Statistical Software, 33(9). https://doi.org/10.18637/jss.v033.i09
 
-
-
+Roser, M., Ritchie, H. and Ortiz-Ospina, R. (2020) - "Coronavirus Disease (COVID-19) - Statistics and Research". Published online at OurWorldInData.org. Retrieved from: https://ourworldindata.org/coronavirus
 
 
 ----
 
-2020-04-30 [tpetzoldt](https://github.com/tpetzoldt)
+2020-04-31 [tpetzoldt](https://github.com/tpetzoldt)
