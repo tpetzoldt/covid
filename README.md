@@ -25,7 +25,8 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
 * [Surveillance, Outbreak Response Management and Analysis System (SORMAS)](https://path.org/articles/open-source-software-tool-helps-governments-monitor-covid-19/) of the Helmholtz Centre for Infection Research
 * **More:** 
     * [Coronavirus Tech Handbook -- Various Efforts To Predict The Future](https://coronavirustechhandbook.com/forecasting)
-    * vejmelkam's list of covid19-models: https://github.com/vejmelkam/covid19-models/
+    * [epirecipes](http://epirecip.es/epicookbook/) A cookbook of epidemiological models with code in R, Python and Julia
+    * vejmelkam's [list of covid19-models](https://github.com/vejmelkam/covid19-models/)
     * "[Top 15 R resources on Novel COVID-19 Coronavirus](https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f)" from Antoine Soetewey 
 
 ## Some R code snippets to plot the JHU data
