@@ -1,9 +1,9 @@
-## SEIR-like model with individuals and state transition matrix
+## Stochastic SEIR model with explicit individuals and state transition matrix
 ## The individuals are identical, so the same could also be done with an
 ## aggregated Markov model -- but this implementation allows extensions
-## towards an individual-based model (IBM) with demography and movement
+## towards an individual-based model (IBM) with demography and movement.
 ##
-## thpe, 2020
+## thpe, 2020-04-04
 
 library("dplyr")
 library("reshape2")
@@ -53,6 +53,12 @@ gen_tmat <- function(state, A, alpha=0.5) {
   A
 }
 
+## define constants of states, L makes sure that it is integer
+## Note different counting, SCP == 1
+SCP <- 1L
+EXP <- 2L
+INF <- 3L
+REC <- 4L
 
 
 ## ==== simulation =============================================================
@@ -75,22 +81,22 @@ A <- matrix(
   byrow = TRUE
 )
 
+N     <- 1000
+Ninf  <- 10
+time  <- 1:150
+alpha <- 0.5
 
-N    <- 1000
-Ninf <- 10
-time <- 1:150
-
-
-
-state <- c(rep(3, Ninf), rep(1, N - Ninf))
+## initial state vector, can be extended to a data frame with additional states
+state <- c(rep(INF, Ninf), rep(SCP, N - Ninf))
 
 ## ---- run --------------------------------------------------------------------
 
+## the following will become a function
 X <- matrix(nrow=length(time), ncol=length(state))
 X[1, ] <- state
 for (i in time[-1]) {
   state <- X[i-1,]
-  tmat <- gen_tmat(state, A, alpha = 0.5)
+  tmat <- gen_tmat(state, A, alpha)
   X[i, ] <- update_state(state, tmat)
 }
 
