@@ -4,7 +4,7 @@
 ## https://qualityandinnovation.com/2015/12/08/a-discrete-time-markov-chain-dtmc-sir-model-in-r/
 ##
 ## Kermack, W. O., & McKendrick, A. G. (1932). Contributions to the mathematical
-## theory of epidemics. II.—The problem of endemicity. Proceedings of the Royal
+## theory of epidemics. II. The problem of endemicity. Proceedings of the Royal
 ## Society of London. Series A, containing papers of a mathematical and physical
 ## character, 138(834), 55-83.
 
@@ -44,6 +44,6 @@ occurs.at <- min(which(sir.df[,ab.state]==max(sir.df[,ab.state])))
 
 #(sir.df[row,]$timestep) + 1
 
-## thpe: maybe:
+## thpe: nrow above undefined, maybe:
 
 (sir.df[occurs.at,]$timestep) + 1
