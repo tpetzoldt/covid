@@ -74,6 +74,7 @@ dat2 %>%
   labs(y = "total infected")
 ```
 
+
 ## Rate of increase and doubling time
 
 At the beginning of the epidemic, the number of infections $N$ can grow exponentially 
@@ -144,7 +145,7 @@ dat2 %>%
   ggplot(aes(time, doubling, color=Country_Region)) +
   geom_point() +
   #geom_smooth(se=FALSE) +
-  coord_cartesian(ylim = c(-2, 20)) +
+  coord_cartesian(ylim = c(-2, 40)) +
   labs(y = "doubling time (d)") + labs(title="lag = 1 day")
 ```
 
@@ -162,7 +163,7 @@ dat2 %>%
   ggplot(aes(time, doubling, color=Country_Region)) +
   geom_point() +
   geom_smooth(method="gam" ,formula=y ~ s(x, bs = "cr"), se=TRUE) +
-  coord_cartesian(ylim = c(-2, 20)) +
+  coord_cartesian(ylim = c(-2, 25)) +
   labs(y = "doubling time (d)", title="lag = 7 days")
 ```
 
