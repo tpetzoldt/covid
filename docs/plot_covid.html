@@ -437,7 +437,7 @@ summary {
 </div>
 
 
-<p>Last update <strong>2020-04-15 03:17:37</strong>, more info: <a href="https://github.com/tpetzoldt/covid" class="uri">https://github.com/tpetzoldt/covid</a></p>
+<p>Last update <strong>2020-04-15 03:43:10</strong>, more info: <a href="https://github.com/tpetzoldt/covid" class="uri">https://github.com/tpetzoldt/covid</a></p>
 <div id="notes" class="section level2">
 <h2>Notes</h2>
 <ul>
@@ -450,11 +450,9 @@ summary {
 <pre class="r"><code>library(&quot;dplyr&quot;)
 library(&quot;readr&quot;)
 library(&quot;ggplot2&quot;)
-library(&quot;reshape2&quot;)</code></pre>
+library(&quot;tidyr&quot;)</code></pre>
 <p>The data were directly retrieved from the Github Data Repository by Johns Hopkins CSSE. Then, data are converted from a wide table format in a more data base friendly “tidy” format with standard-conforming variable names and an ISO 8601 date format that allows computations.</p>
-<pre class="r"><code>#file &lt;- &quot;https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv&quot;
-
-file &lt;- &quot;https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv&quot;
+<pre class="r"><code>file &lt;- &quot;https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv&quot;
 
 dat &lt;- read_delim(file, delim=&quot;,&quot;,
                   escape_double = FALSE,
@@ -467,7 +465,7 @@ dat2 &lt;-
   ## summarize Country/Region duplicates
   group_by(Country_Region) %&gt;% summarise_at(vars(-(1:4)), sum) %&gt;%
   ## make it a long table
-  melt(id.vars = &quot;Country_Region&quot;, variable.name = &quot;time&quot;) %&gt;%
+  pivot_longer(cols = -Country_Region, names_to = &quot;time&quot;) %&gt;%
   ## convert to ISO 8601 date
   mutate(time = as.POSIXct(time, format=&quot;%m/%e/%y&quot;))</code></pre>
 </div>

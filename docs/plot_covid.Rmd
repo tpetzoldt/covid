@@ -23,7 +23,7 @@ Last update  **`r Sys.time()`**, more info: https://github.com/tpetzoldt/covid
 library("dplyr")
 library("readr")
 library("ggplot2")
-library("reshape2")
+library("tidyr")
 ```
 
 
@@ -33,8 +33,6 @@ in a more data base friendly "tidy" format with standard-conforming variable nam
 and an ISO 8601 date format that allows computations.
 
 ```{r}
-#file <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv"
-
 file <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
 
 dat <- read_delim(file, delim=",",
@@ -48,7 +46,7 @@ dat2 <-
   ## summarize Country/Region duplicates
   group_by(Country_Region) %>% summarise_at(vars(-(1:4)), sum) %>%
   ## make it a long table
-  melt(id.vars = "Country_Region", variable.name = "time") %>%
+  pivot_longer(cols = -Country_Region, names_to = "time") %>%
   ## convert to ISO 8601 date
   mutate(time = as.POSIXct(time, format="%m/%e/%y"))
 ```
