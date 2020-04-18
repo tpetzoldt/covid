@@ -23,6 +23,9 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
 * SIR-X model from Ben Meier and Dirk Brockmann, Robert Koch Institute and Humboldt University Berlin, Germany [webpage](http://rocs.hu-berlin.de/corona/docs/forecast/results_by_country/ ), [paper](https://doi.org/10.1101/2020.02.18.20024414), [sourcecode + data](https://github.com/benmaier/COVID19CaseNumberModel)
 * Reports and models from the [Imperial College London](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/), Ferguson et al. (2020) [preprint](https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf) of an individual-based model
 * [Surveillance, Outbreak Response Management and Analysis System (SORMAS)](https://path.org/articles/open-source-software-tool-helps-governments-monitor-covid-19/) of the Helmholtz Centre for Infection Research
+* Interactive graphics of the Washington Post:
+    * [Warum Ausbrüche wie das Coronavirus sich exponentiell ausbreiten ...](https://www.washingtonpost.com/graphics/2020/health/corona-simulator-german/?itid=sf_coronavirus)
+    * [How epidemics like covid-19 end (and how to end them faster)](https://www.washingtonpost.com/graphics/2020/health/coronavirus-how-epidemics-spread-and-end/)
 * **More:** 
     * [Coronavirus Tech Handbook -- Various Efforts To Predict The Future](https://coronavirustechhandbook.com/forecasting)
     * [epirecipes](http://epirecip.es/epicookbook/) A cookbook of epidemiological models with code in R, Python and Julia
