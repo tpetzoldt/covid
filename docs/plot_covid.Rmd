@@ -35,9 +35,12 @@ and an ISO 8601 date format that allows computations.
 ```{r}
 file <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
 
-dat <- read_delim(file, delim=",",
-                  escape_double = FALSE,
-                  trim_ws = TRUE)
+#dat <- read_delim(file, delim=",",
+#                  escape_double = FALSE,
+#                  trim_ws = TRUE)
+
+dat <- read_delim(file, delim=",")
+
 
 names(dat)[1:2] <- c("Province_State", "Country_Region")
 
