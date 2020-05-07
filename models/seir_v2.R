@@ -122,7 +122,11 @@ ui <- fluidPage(
       lapply(L_y0, function(x) do.call("numericInput", x)),
 
       h3("Parameters"),
-      lapply(L_parms, function(x) do.call("numericInput", x))
+      lapply(L_parms, function(x) do.call("numericInput", x)),
+      h3("More information"),
+      a(href="https://weblab.hydro.tu-dresden.de/", "main page of this server"), br(),
+      a(href="https://github.com/tpetzoldt/covid", "source code"), br(),
+      a(href="https://tu-dresden.de/Members/thomas.petzoldt", "author homepage"), br()
     ),
     mainPanel(
       h3("Simulation results"),
