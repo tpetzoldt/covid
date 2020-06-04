@@ -32,6 +32,7 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
     * [epirecipes](http://epirecip.es/epicookbook/) A cookbook of epidemiological models with code in R, Python and Julia
     * vejmelkam's [list of covid19-models](https://github.com/vejmelkam/covid19-models/)
     * "[Top 15 R resources on Novel COVID-19 Coronavirus](https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f)" from Antoine Soetewey 
+* [Contagiousness of COVID-19 Part I: Improvements of Mathematical Fitting](https://blog.ephorie.de/contagiousness-of-covid-19-part-i-improvements-of-mathematical-fitting-guest-post): a blog post of Martijn Weterings who discusses parameter fitting and found out that "COVID-19" is "a data epidemic"
 
 ## Some R code snippets to plot the JHU data
 
