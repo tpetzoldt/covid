@@ -13,7 +13,7 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
     [data](https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0/data)
 
     
-### Models and Data Analyses
+### Models and data analyses
 
 * R Shiny App from Ben Phillips, University of Melbourne https://benflips.shinyapps.io/nCovForecast/
 * Basic [SEIR model from Christian Hubbs](https://towardsdatascience.com/social-distancing-to-slow-the-coronavirus-768292f04296), that inspired my model 
@@ -32,7 +32,13 @@ The Covid-19 pandemic is currently changing our lives. This repository will cont
     * [epirecipes](http://epirecip.es/epicookbook/) A cookbook of epidemiological models with code in R, Python and Julia
     * vejmelkam's [list of covid19-models](https://github.com/vejmelkam/covid19-models/)
     * "[Top 15 R resources on Novel COVID-19 Coronavirus](https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f)" from Antoine Soetewey 
-* [Contagiousness of COVID-19 Part I: Improvements of Mathematical Fitting](https://blog.ephorie.de/contagiousness-of-covid-19-part-i-improvements-of-mathematical-fitting-guest-post): a blog post of Martijn Weterings who discusses parameter fitting and found out that "COVID-19" is "a data epidemic"
+
+### Important notes
+
+* The material presented here aims to improve **understanding** of the COVID-19 outbreak. However, all model results have to be interpreted with great respect and care.
+* If you want to fit such a model to data, read the blog post of Martijn Weterings: [Contagiousness of COVID-19 Part I: Improvements of Mathematical Fitting](https://blog.ephorie.de/contagiousness-of-covid-19-part-i-improvements-of-mathematical-fitting-guest-post), who found out that "COVID-19" is "a data epidemic" and discusses mathematical reasons why fitting such models is inherently difficult.
+* In case of doubt, read the opinion paper of Steinman, P. et al. (2020): [Don’t try to predict COVID-19. If you must, use Deep Uncertainty methods](https://rofasss.org/2020/04/17/deep-uncertainty/).
+
 
 ## Some R code snippets to plot the JHU data
 
@@ -93,9 +99,11 @@ Maier, B. F., & Brockmann, D. (2020). Effective containment explains sub-exponen
 
 Soetaert, K., Petzoldt, T., & Setzer, R. W. (2010). Solving Differential Equations in R: Package deSolve. Journal of Statistical Software, 33(9). https://doi.org/10.18637/jss.v033.i09
 
-Roser, M., Ritchie, H. and Ortiz-Ospina, R. (2020) - "Coronavirus Disease (COVID-19) - Statistics and Research". Published online at OurWorldInData.org. Retrieved from: https://ourworldindata.org/coronavirus
+Roser, M., Ritchie, H. and Ortiz-Ospina, R. (2020). "Coronavirus Disease (COVID-19) - Statistics and Research". Published online at OurWorldInData.org. Retrieved from: https://ourworldindata.org/coronavirus
+
+Steinmann, P., Wang, J.R., Gvan Voorn, G.A.K, and Kwakkel, J.H. (2020) Don’t try to predict COVID-19. If you must, use Deep Uncertainty methods. Review of Artificial Societies and Social Simulation. https://rofasss.org/2020/04/17/deep-uncertainty/
 
 
 ----
 
-2020-04-31 [tpetzoldt](https://github.com/tpetzoldt)
+2021-04-29 [tpetzoldt](https://github.com/tpetzoldt)
